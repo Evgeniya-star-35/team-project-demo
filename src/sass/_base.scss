@@ -58,11 +58,10 @@ body.modal-open {
   overflow: hidden;
 }
 
-
 .section-title {
   margin-top: 0;
   margin-bottom: 24px;
-  font-family: Caveat Brush;
+  font-family: 'Caveat Brush', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -99,19 +98,16 @@ body.modal-open {
   border-radius: 25px;
   transition: background-color var(--animation), color var(--animation), border var(--animation);
 
-  
-
   &:focus,
   &:hover {
     background-color: rgba(133, 133, 133, 0.5);
     color: #ab816c;
     border: 1px solid #ab816c;
-    transition: background-color var(--animation), color var(--animation);
   }
 }
 
 .btn__text {
-  font-family: Caveat Brush;
+  font-family: 'Caveat Brush', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
