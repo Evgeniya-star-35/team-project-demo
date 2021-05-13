@@ -1,15 +1,63 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
 body.modal-open {
   overflow: hidden;
 }
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -30,15 +78,16 @@ body.modal-open {
   border: none;
   cursor: pointer;
   background-color: #ab816c;
+  color: var(--white-text-color);
   border-radius: 25px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation), color var(--animation), border var(--animation);
 
   &:focus,
   &:hover {
-    background-color: rgba(171, 129, 108, 0.5);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(133, 133, 133, 0.5);
+    color: #ab816c;
+    border: 1px solid #ab816c;
+    transition: background-color var(--animation), color var(--animation);
   }
 }
 
@@ -51,6 +100,7 @@ body.modal-open {
   text-align: center;
   // border: 1px solid #000000;
 }
+
 .container {
   margin-left: auto;
   margin-right: auto;
