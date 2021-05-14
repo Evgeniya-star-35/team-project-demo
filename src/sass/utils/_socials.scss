@@ -50,3 +50,35 @@
     width: 24px;
   }
 }
+
+.social-list {
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: start;
+  }
+}
+
+.social-icons__link--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 16px;
+
+  &:not(:last-child) {
+    margin-right: 2px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 18px;
+    height: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 24px;
+    height: 15px;
+  }
+}
