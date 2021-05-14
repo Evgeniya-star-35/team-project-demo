@@ -1,23 +1,20 @@
 
  
-    <div>
-    <img
-      class="menu-logo"
-      srcset="
-      ./images/logo/logo-min.png 1x,
-      ./images/logo/logo@2x-min.png 2x
-        "
-      src="./images/logo/logo-min.png" 
-      alt="логотип меню" width="190"
-      >
+   <div class="mobile-menu">
     <div class="menu-conteiner" id="menu-conteiner" data-menu>
-      <ul class="menu">
-        <li class="memu-donat"><a href="./about-us.html">About us</a></li>
-        <li class="memu-donat"><a href="./program.html">Program</a></li>
-        <li class="memu-donat"><a href="./reviews.html">Reviews</a></li>
-        <li class="memu-donat"><a href="./contact.html">Contacts</a></li>
-      </ul>
-    </div>
+   <svg width="190px" height="85px"
+   class="donat"
+   aria-label="logo donat">
+     <use class="menu-icon" href="./images/sprite.svg#icon-logo"></use>
+   </svg>
+
+    <ul class="menu">
+      <li class="memu-donat"><a href="./about-us.html">About us</a></li>
+      <li class="memu-donat"><a href="./program.html">Program</a></li>
+      <li class="memu-donat"><a href="./reviews.html">Reviews</a></li>
+      <li class="memu-donat"><a href="./contact.html">Contacts</a></li>
+    </ul>
+   </div>
 
     <button type="button" 
     class="menu-buttom is-open" 
@@ -32,6 +29,12 @@
         </svg>
     </button>
   </div>
+
+<button data-modal-close class="modal-button">
+              <svg width="11px" height="11px" aria-label="close" class="close">
+                  <use href="./images/symbol-defs.svg#vector7"></use>
+              </svg>
+          </button>
 
 
  
