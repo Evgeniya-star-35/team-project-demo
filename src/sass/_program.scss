@@ -7,6 +7,8 @@
 
 // }
 
+// program-description
+
 // .program__description {
 // }
 
@@ -66,4 +68,84 @@
   text-align: center;
   cursor: pointer;
   color: var(--button-second-color);
+}
+
+// progran__windows-case
+
+// .program__windows-case{
+
+// }
+
+.program-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.program-showcase__item {
+  margin-bottom: 25px;
+}
+
+.program-showcase__item:nth-child(2) {
+  margin-top: 30px;
+}
+
+.program-showcase__item:nth-child(3) {
+  margin-top: -30px;
+}
+
+.program-showcase__item:nth-child(4) {
+  margin-top: 0;
+}
+
+.program-showcase__card {
+  width: 142px;
+  height: 142px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #fef3e4;
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+  padding-top: 50px; //delete when image add
+}
+
+.program-showcase__thumb {
+}
+
+.program-showcase__donut-img {
+}
+
+.program-showcase__donut-info {
+}
+
+.program-showcase__donut-title {
+  font-family: "Caveat Brush", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.27;
+  padding-bottom: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  color: var(--title-donut-color);
+}
+
+.program-showcase__donut-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 13px;
+  display: block;
+  color: var(--title-donut-color);
+}
+
+.program-showcase__donat-mark {
+}
+
+.program-showcase__donut-icon {
+  fill: #674d40;
 }
