@@ -68,6 +68,7 @@ body.modal-open {
   line-height: 2.71;
   text-align: center;
   color: var(--main-text-color);
+
   @media screen and (min-width: 1280px) {
     font-size: 36px;
     line-height: 1.81;
@@ -88,7 +89,7 @@ body.modal-open {
 .btn {
   display: inline-block;
   min-width: 145px;
-  height: 40px;
+  height: 65px;
   padding: 8px 40px;
   font-family: inherit;
   border: none;
@@ -109,6 +110,10 @@ body.modal-open {
     background-color: rgba(133, 133, 133, 0.5);
     color: #ab816c;
     border: 1px solid #ab816c;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 158px;
   }
 }
 
