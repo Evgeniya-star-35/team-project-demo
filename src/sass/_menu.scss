@@ -2,6 +2,12 @@
     background-color: #FEF3E4;
     background: rgba(254, 243, 228, 0.9);
     backdrop-filter: blur(4px);
+    position: fixed;
+    position: relative;
+
+    @media screen and (min-width: 769px){
+        display: none;
+    }
 }
 
 .menu-contact{
@@ -13,27 +19,31 @@
     height: 100vh;
     width: 100vw;
 
+    
+
 }
 .menu-buttom{
     z-index: 10;
     position: absolute;
-    color: var(--main-text-color);
+    transform: translate(-5%, -50%);
+    fill: var(--main-text-color);
     transform: matrix(-1, 0, 0, 1, 0, 0);
     background-color: transparent;
- 
-    @media screen and (max-width: 768px){
-    top: 10px;
-    right: 21px;
-    width: 40px;
-    height: 40px;
-        }
-    @media screen and (min-width: 769px){
-    top: 10px;
-    right: 67pxpx;
-    width: 40px;
-    height: 40px;;
-        }
+    margin: 5px;
+    border: transparent;
 
+    @media screen and (max-width: 480px){
+        top: 10px;
+        right: 21px;
+        width: 40px;
+        height: 40px;
+            }
+        @media screen and (max-width: 1600px){
+        top: 10px;
+        right: 67px;
+        width: 40px;
+        height: 40px;;
+            }
 }
 
 .page-menu{
@@ -62,4 +72,10 @@
     @media screen and (min-width: 769px){
     padding-bottom: 40px;
     }
+}
+
+.mobile-icon{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
 }
