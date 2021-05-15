@@ -9,8 +9,6 @@
   }
 }
 .registration__frame {
-  // display: flex;
-  // flex-direction: column;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -21,12 +19,13 @@
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-top-left-radius: 150px;
   border-top-right-radius: 150px;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     width: 290px;
     height: 510px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
     flex-direction: row;
     width: 634px;
     height: 260px;
@@ -189,6 +188,7 @@
   color: rgba(171, 129, 108, 0.5);
 }
 .btn {
+  display: flex;
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 768px) {
