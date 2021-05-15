@@ -1,15 +1,18 @@
 .top{
-    background-color: #FEF3E4;
-    background: rgba(254, 243, 228, 0.9);
+    
     position: fixed;
     position: relative;
+}
 
-    @media screen and (min-width: 769px){
-        display: none;
+@media screen and (min-width: 769px){
+.top{
+    display: none;
     }
 }
 
 .menu-contact{
+    background-color: #FEF3E4;
+    background: rgba(254, 243, 228, 0.9);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -17,8 +20,15 @@
     padding-top: 25px;
     height: 100vh;
     width: 100vw;
-
 }
+@media screen and (min-width: 320px){
+    .menu-contact{
+        height: 100vh;
+        width: 100vw; 
+    }
+}
+
+
 .menu-buttom{
     z-index: 10;
     position: absolute;
@@ -28,14 +38,18 @@
     background-color: transparent;
     margin: 5px;
     border: transparent;
+}
 
-    @media screen and (max-width: 480px){
+    @media screen and (min-width: 320px){
+        .menu-buttom{
     top: 10px;
     right: 21px;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
      }
-    @media screen and (max-width: 1600px){
+    }
+    @media screen and (min-width: 480px){
+        .menu-buttom{
     top: 10px;
     right: 67px;
     width: 40px;
@@ -61,11 +75,15 @@
 .logo-menu{
     margin-bottom: 40px;
 }
-.menu-donat{
+
+
 @media screen and (max-width: 768px){
+    .menu-donat{
 padding-bottom: 45px;
 }
+}
 @media screen and (min-width: 769px){
+    .menu-donat{
 padding-bottom: 40px;
 }
 }
