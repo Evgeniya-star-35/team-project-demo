@@ -1,3 +1,33 @@
+.footer {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__link {
+  color: inherit;
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__link:hover,
+.address__link:focus .address__icon {
+  fill: var(--accent-color);
+}
 .address__icon {
   margin-right: 5px;
+  transition: fill var(--animation);
+
+  .address__link:hover &,
+  .address__link:focus & {
+    fill: var(--accent-color);
+  }
 }
