@@ -175,6 +175,9 @@
     margin-bottom: 15px;
   }
 }
+.registration-form__input:invalid:not(:focus) {
+  border: 1px solid red;
+}
 
 .registration-form__input:-webkit-autofill,
 .registration-form__input:-webkit-autofill:hover,
