@@ -1,37 +1,32 @@
+<div>
+  <svg width="190px" height="85px" class="logo-menu" aria-label="logo-menu">
+    <use class="logo" href="./images/sprite.svg#icon-logo"></use>
+  </svg>
 
- 
-    <div>
-    <img
-      class="menu-logo"
-      srcset="
-      ./images/logo/logo-min.png 1x,
-      ./images/logo/logo@2x-min.png 2x
-        "
-      src="./images/logo/logo-min.png" 
-      alt="логотип меню" width="190"
-      >
-    <div class="menu-conteiner" id="menu-conteiner" data-menu>
-      <ul class="menu">
-        <li class="memu-donat"><a href="./about-us.html">About us</a></li>
-        <li class="memu-donat"><a href="./program.html">Program</a></li>
-        <li class="memu-donat"><a href="./reviews.html">Reviews</a></li>
-        <li class="memu-donat"><a href="./contact.html">Contacts</a></li>
-      </ul>
-    </div>
-
-    <button type="button" 
-    class="menu-buttom is-open" 
-    aria-expanded="false" 
-    aria-controls="menu-conteiner"
-    data-menu-button="">
-      <svg width="18px" height="18px" 
-      class="mobile-icon"
-      aria-label="переключатель мобільного меню">
-          <use class="icon-close" href="./images/sprite.svg#icon-menu"></use>
-          <use class="icon-menu" href="./images/sprite.svg#icon-close"></use>
-        </svg>
-    </button>
+  <div class="menu-conteiner" id="menu-conteiner" data-menu>
+    <ul class="menu">
+      <li class="menu-donat"><a href="#about-us">About us</a></li>
+      <li class="menu-donat"><a href="#program">Program</a></li>
+      <li class="menu-donat"><a href="#reviews">Reviews</a></li>
+      <li class="menu-donat"><a href="#contact">Contacts</a></li>
+    </ul>
   </div>
 
-
- 
+  <button
+    type="button"
+    class="menu-buttom is-open"
+    aria-expanded="false"
+    aria-controls="menu-conteiner"
+    data-menu-button
+  >
+    <svg
+      width="18px"
+      height="18px"
+      class="mobile-icon"
+      aria-label="переключатель мобільного меню"
+    >
+      <use class="icon-close" href="./images/sprite.svg#icon-menu"></use>
+      <use class="icon-menu" href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+</div>
