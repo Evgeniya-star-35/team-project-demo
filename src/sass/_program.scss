@@ -7,9 +7,8 @@
 
 // }
 
-// program-description
+// .program-description {
 
-// .program__description {
 // }
 
 .program__title {
@@ -52,7 +51,7 @@
 }
 
 .program-description {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 // ====moreLess
 .program__button {
@@ -94,9 +93,9 @@
 
 // progran__windows-case
 
-// .program__windows-case{
-
-// }
+.program__window-case {
+	padding-top: 56px;
+}
 
 .program-showcase {
   display: flex;
@@ -107,7 +106,7 @@
 }
 
 .program-showcase__item {
-  margin-bottom: 25px;
+  margin-bottom: 56px;
 }
 
 .program-showcase__item:nth-child(2) {
@@ -131,9 +130,13 @@
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 
   padding-top: 50px; //delete when image add
+  position: relative;
 }
 
 .program-showcase__thumb {
+  position: absolute;
+  top: -35px;
+  left: 35px;
 }
 
 .program-showcase__donut-img {
@@ -171,3 +174,4 @@
 .program-showcase__donut-icon {
   fill: #674d40;
 }
+// ===svg
