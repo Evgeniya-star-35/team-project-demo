@@ -23,6 +23,9 @@
     width: 290px;
     height: 510px;
   }
+  @media screen and (min-width: 480px) {
+    width: 350px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -93,9 +96,10 @@
   // margin-right: auto;
   margin-bottom: 25px;
   margin-top: 0;
-  // @media screen and (min-width: 768px) {
-  //   flex-direction: row;
-  // }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .registration-form::before {
@@ -194,6 +198,7 @@
 
 .btn--centre {
   display: flex;
+  margin-top: 36px;
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 768px) {
