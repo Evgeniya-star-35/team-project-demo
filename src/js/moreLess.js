@@ -1,6 +1,6 @@
 (() => {
 	const menuBtnRef = document.querySelector("[data-program__button]");
-	const mobileMenuRef = document.querySelector("[openLess]");
+	const mobileMenuRef = document.querySelector("[moreLess]");
 
 	menuBtnRef.addEventListener("click", () => {
 		const expanded =
