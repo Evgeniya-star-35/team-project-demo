@@ -1,3 +1,12 @@
+.registration {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
+}
 .registration__frame {
   display: flex;
   flex-direction: column;
@@ -16,30 +25,45 @@
     width: 290px;
     height: 510px;
   }
-  @media screen and (min-width: 656px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-
     flex-direction: row;
     width: 634px;
     height: 260px;
-    padding: 54px 21px 54px 35px;
+    padding: 54px 22px 54px 34px;
     background: #fffff9;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px;
     transform: rotate(0);
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 822px;
+    min-height: 260px;
+    padding: 54px 100px 54px 108px;
   }
 }
 
 .rotate {
   text-align: center;
   transform: rotate(270deg);
-  @media screen and (min-width: 656px) {
-    display: flex;
-    justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     transform: rotate(360deg);
   }
 }
 
+.form-text {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.registration-text {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
 .registration-text__one,
 .registration-text__two {
   font-style: normal;
@@ -48,24 +72,12 @@
   line-height: 1.22;
   text-align: center;
   color: var(--main-text-color);
-  @media screen and (min-width: 656px) {
+  @media screen and (min-width: 768px) {
     text-align: right;
   }
-}
-.registration-text {
-  @media screen and (min-width: 656px) {
-    margin-right: 30px;
-  }
-}
-.registration-text::after {
-  content: '';
-  width: 100%;
-  margin-top: 20px;
-  border: 1px solid rgba(171, 129, 108, 0.5);
-  @media screen and (min-width: 656px) {
-    width: 190px;
-    margin-left: 30px;
-    transform: rotate(90deg);
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -74,7 +86,7 @@
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 24px;
-  @media screen and (min-width: 656px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 34px;
   }
 }
@@ -92,6 +104,16 @@
   margin-top: 0;
 }
 .registration-form::before {
+  content: '';
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid rgba(171, 129, 108, 0.5);
+  @media screen and (min-width: 768px) {
+    width: 190px;
+    margin-bottom: -3px;
+    margin-left: -110px;
+    transform: rotate(90deg);
+  }
 }
 .registration-form__join {
   max-width: 220px;
@@ -101,7 +123,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   text-align: center;
   color: var(--main-text-color);
   @media screen and (min-width: 768px) {
@@ -138,12 +160,13 @@
   border-right: none;
   border-top: none;
   border-bottom: 1px solid #ab816c;
-  &:not(:last-child) {
-    margin-bottom: 25px;
+  @media screen and (min-width: 480px) {
+    min--width: 265px;
   }
 }
-@media screen and (max-width: 767px) {
-  .registration-form__input:not(:last-child) {
+.registration-form__input:not(:last-child) {
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
     margin-bottom: 15px;
   }
 }
