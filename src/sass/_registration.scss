@@ -1,11 +1,11 @@
 .registration {
   position: relative;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 }
 .registration__frame {
@@ -187,9 +187,7 @@
   line-height: 1.25;
   color: rgba(171, 129, 108, 0.5);
 }
-// .registration-form__input:focus:invalid {
-//   border: 2px solid red;
-// }
+
 .btn {
   display: flex;
   margin-right: auto;
