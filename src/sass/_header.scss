@@ -1,0 +1,190 @@
+.header__nav {
+  display: block;
+  //   padding-top: 8px;
+  margin-bottom: 34px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+.header__icon {
+  width: 96px;
+  height: 44px;
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 72px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 27px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 32px;
+    margin-right: 38px;
+  }
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 52px;
+}
+
+.header-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+.header-list__link {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #2e2520;
+}
+.header-menu {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+}
+
+.menu__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 224px;
+  font-family: Caveat Brush;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.27;
+  color: #2e2520;
+  margin-bottom: 4px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 4px;
+    text-align: start;
+    margin: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    text-align: start;
+    width: 490px;
+    margin: 0;
+
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 65px;
+    color: #2e2520;
+    margin-bottom: 15px;
+  }
+}
+.menu__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2e2520;
+  margin-bottom: 36px;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    margin-top: 4px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+}
+
+.top {
+  background-image: url('../images/about-us/mobile/pic.png'),
+    url('../images/hero/mobile/donuts.png'), url('../images/hero/mobile/fon-top.png');
+  background-size: 290px, 135px, cover;
+  background-position: top 360px, top left, center;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/about-us/mobile/pic@2x.png'),
+      url('../images/hero/mobile/donuts@2x.png'), url('../images/hero/mobile/fon-top@2x.png');
+  }
+  @media screen and (min-width: 320px) {
+    background-image: url('../images/about-us/mobile/pic.png'),
+      url('../images/hero/mobile/donuts.png'), url('../images/hero/mobile/fon-top.png');
+    background-size: 290px, 135px, cover;
+    background-position: top 360px, top left, center;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about-us/mobile/pic@2x.png'),
+        url('../images/hero/mobile/donuts@2x.png'), url('../images/hero/mobile/fon-top@2x.png');
+    }
+  }
+  @media screen and (min-width: 480px) {
+    background-image: url('../images/about-us/tablet/pic.png'),
+      url('../images/hero/tablet/donuts.png'), url('../images/hero/tablet/fon-top.png');
+    background-size: 330px, 180px, cover;
+    background-position: top 360px, top left, center;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about-us/tablet/pic@2x.png'),
+        url('../images/hero/tablet/donuts@2x.png'), url('../images/hero/tablet/fon-top@2x.png');
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/about-us/tablet/pic.png'),
+      url('../images/hero/tablet/donuts.png'), url('../images/hero/tablet/fon-top.png');
+    background-size: 330px, 378px, cover;
+    background-position: bottom left, top right 138px, center;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about-us/tablet/pic@2x.png'),
+        url('../images/hero/tablet/donuts@2x.png'), url('../images/hero/tablet/fon-top@2x.png');
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/about-us/desktop/pic.png'),
+      url('../images/hero/desktop/spoon.png'), url('../images/hero/desktop/donuts.png'),
+      url('../images/hero/desktop/fon-top.png');
+    background-size: 512px, 178px, 793px, cover;
+    background-position: bottom left 72px, top 166px left, top right, center;
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about-us/desktop/pic@2x.png'),
+        url('../images/hero/desktop/spoon@2x.png'), url('../images/hero/desktop/donuts@2x.png'),
+        url('../images/hero/desktop/fon-top@2x.png');
+    }
+  }
+}
+
+.btn-register {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+  }
+}
+
+.mobile-menu {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
