@@ -6,8 +6,6 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .contact-form__title {
@@ -28,6 +26,8 @@
   cursor: pointer;
   margin-bottom: 25px;
   margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding-bottom: 2px;
   background-color: transparent;
 
@@ -66,4 +66,9 @@
 .contact-form__input:focus::placeholder,
 .contact-form__textarea:focus::placeholder {
   color: var(--accent-color);
+}
+
+.btn--contact {
+  margin-left: auto;
+  margin-right: auto;
 }
