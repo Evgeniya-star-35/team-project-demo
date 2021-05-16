@@ -67,13 +67,13 @@ body.modal-open {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 2.71;
+  line-height: 1.71;
   text-align: center;
   color: var(--main-text-color);
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
-    line-height: 1.81;
+    line-height: 1.14;
   }
 }
 
