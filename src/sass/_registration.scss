@@ -73,7 +73,7 @@
 }
 
 .registration-text__one {
-  max-width: 118px;
+  min-width: 118px;
   margin: 0 auto;
   margin-bottom: 24px;
   @media screen and (min-width: 768px) {
@@ -86,6 +86,9 @@
 .registration-text__two {
   margin-top: 0;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .registration-form {
   position: relative;
@@ -99,6 +102,7 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;
+    margin-bottom: 0;
   }
 }
 
