@@ -1,14 +1,13 @@
 .about-us__container {
   @media screen and (min-width: 769px) {
     display: flex;
-    margin-left: 0;
-    margin-right: 0;
-    width: 720px;
+    width: 769px;
+    padding-right: 49px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 56px;
-    width: 1010px;
+    width: 1138px;
+    padding-right: 128px;
   }
 }
 
@@ -58,4 +57,36 @@
   color: var(--button-second-color);
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 480px) {
+    font-size: 23px;
+  }
+  @media screen and (min-width: 1199.99px) {
+    display: none;
+  }
+}
+
+.about-us__button .about-us__less {
+  display: none;
+}
+
+.about-us__button.is-open .about-us__less {
+  display: block;
+}
+
+.about-us__button.is-open .about-us__read-more {
+  display: none;
+}
+
+.about-us__text--below.is-open {
+  display: block;
+}
+
+.about-us__text--below {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
