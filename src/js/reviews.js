@@ -6,6 +6,7 @@ $(document).ready(function() {
         asNavFor: '.slider-pev',
         speed: 1000,
         autoplay: true,
+        autoplaySpeed: 5000,
         centerMode: true,
         initialSlide: 1,
         
@@ -24,7 +25,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        speed: 1000,
+        speed: 2000,
         asNavFor: '.slider'
     });
     $(".slider-pev").on('afterChange', function(event, slick, currentSlide){
