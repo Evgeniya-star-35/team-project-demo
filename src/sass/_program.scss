@@ -13,9 +13,9 @@
   @media screen and (min-width: 768px) {
     max-width: 310px;
 
-	@media screen and (min-width:1200px) {
-		max-width: 407px;
-	}
+    @media screen and (min-width: 1200px) {
+      max-width: 407px;
+    }
   }
 }
 
@@ -29,7 +29,7 @@
   color: var(--main-text-color);
 
   @media screen and (min-width: 480px) {
-	font-size: 28px;
+    font-size: 28px;
     line-height: 2.58;
     text-align: start;
   }
@@ -51,8 +51,6 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--main-text-color);
-
- 
 
   @media screen and(min-width: 1200px) {
     font-size: 18px;
@@ -89,8 +87,7 @@
 .program-description__item:not(:last-child) {
   padding-bottom: 10px;
   @media screen and(min-width: 1200px) {
-  padding-bottom: 15px;
-   
+    padding-bottom: 15px;
   }
 }
 
@@ -100,7 +97,6 @@
 
 // ====moreLess
 .program__button {
-	
   display: inline-flex;
   padding: 0;
   margin: 0;
@@ -113,13 +109,13 @@
   text-align: center;
   cursor: pointer;
   color: var(--button-second-color);
-	
-  @media screen and (min-width:480px) {
-	font-size: 23px;	
+
+  @media screen and (min-width: 480px) {
+    font-size: 23px;
   }
 
-  @media screen and (min-width:1199.9px) {
-	display: none;  
+  @media screen and (min-width: 1199.9px) {
+    display: none;
   }
 }
 
@@ -143,7 +139,7 @@
   display: none;
 
   @media screen and (min-width: 1200px) {
-	  display: block;
+    display: block;
   }
 }
 
@@ -154,37 +150,35 @@
 .program__window-case {
   padding-top: 30px;
 
-  @media screen and (min-width:768px) {
-	  padding-top: 40px;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
   }
 
-  @media screen and (min-width:1199.9px) {
-	padding-top: 35px;  
+  @media screen and (min-width: 1199.9px) {
+    padding-top: 35px;
     padding-left: 25px;
     margin-right: -35px;
   }
-
 }
 
 .program-showcase {
   display: flex;
   flex-wrap: wrap;
- 
+
   margin-top: -15px;
 
-  @media screen and (min-width:480px) {
-	 margin-right: 50px;
-	 margin-left: 50px;
+  @media screen and (min-width: 480px) {
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
   @media screen and (max-width: 767.9px) {
     justify-content: space-between;
-	
   }
 
   @media screen and(min-width:768px) {
     margin-left: 0;
-	margin-right: 0;
+    margin-right: 0;
   }
 
   //   @media screen and (min-width: 768px) {
@@ -203,25 +197,22 @@
 
 .program-showcase__item:nth-child(2) {
   margin-top: 50px;
-  @media screen and (min-width:1200px) {
-	margin-top: 70px;
-
+  @media screen and (min-width: 1200px) {
+    margin-top: 70px;
   }
 }
 
 .program-showcase__item:nth-child(3) {
   margin-top: 30px;
-  @media screen and (min-width:1200px) {
-	margin-top: 5px;
-
+  @media screen and (min-width: 1200px) {
+    margin-top: 5px;
   }
 }
 
 .program-showcase__item:nth-child(4) {
   margin-top: 60px;
-  @media screen and (min-width:1200px) {
-	margin-top: 60px;
-
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
   }
 }
 
@@ -237,31 +228,28 @@
   position: relative;
 
   @media screen and (min-width: 1200px) {
-	width: 180px;
-	height: 180px;
-	padding-top: 70px;
-
+    width: 180px;
+    height: 180px;
+    padding-top: 70px;
   }
 }
-
-
 
 .program-showcase__thumb {
   position: absolute;
   top: -35px;
   left: 35px;
 
-  @media screen and (min-width: 1200px){
-	top: -40px;
-	left: 45px;
+  @media screen and (min-width: 1200px) {
+    top: -40px;
+    left: 45px;
   }
 }
 
-.program-showcase__donut-img {
-}
+// .program-showcase__donut-img {
+// }
 
-.program-showcase__donut-info {
-}
+// .program-showcase__donut-info {
+// }
 
 .program-showcase__donut-title {
   font-family: "Caveat Brush", sans-serif;
@@ -273,9 +261,9 @@
   text-align: center;
   color: var(--title-donut-color);
 
-  @media screen and (min-width: 1200px){
-	font-size: 24px;
-	line-height: 1.25;
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 1.25;
   }
 }
 
@@ -290,14 +278,14 @@
   display: block;
   color: var(--title-donut-color);
 
-  @media screen and (min-width: 1200px){
-	font-size: 16px;
-	line-height: 1.25;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
-.program-showcase__donat-mark {
-}
+// .program-showcase__donat-mark {
+// }
 
 .program-showcase__donut-icon {
   fill: #674d40;
@@ -308,8 +296,7 @@
   width: 100%;
   height: 20px;
 
-  @media screen and (min-width: 1200px){
-	height: 25px;
-
+  @media screen and (min-width: 1200px) {
+    height: 25px;
   }
 }
