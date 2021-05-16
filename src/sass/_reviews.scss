@@ -3,7 +3,6 @@
         margin-bottom: 0;
     }
 }
-
 .slick-track {
     display: flex;
 }
@@ -78,9 +77,13 @@
     @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: 1.25;
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 70px;
     }
     margin-top: 35px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     text-align: center;
     font-size: 14px;
     line-height: 1.25;
