@@ -2,56 +2,22 @@
   @media screen and (min-width: 769px) {
     display: flex;
     margin-left: 0;
-    width: 690px;
+    margin-right: 0;
+    width: 720px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 56px;
-    width: 980px;
-  }
-}
-
-.about-us__image {
-  width: 100%;
-  height: 300px;
-  background-image: url(../images/about-us/mobile/pic.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/about-us/mobile/pic@2x.png);
-  }
-
-  @media screen and (min-width: 769px) {
-    width: 330px;
-    height: 352px;
-    background-image: url(../images/about-us/tablet/pic.png);
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about-us/tablet/pic@2x.png);
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 512px;
-    height: 547px;
-    background-image: url(../images/about-us/desktop/pic.png);
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about-us/desktop/pic@2x.png);
-    }
+    width: 1010px;
   }
 }
 
 .about-us__description {
   @media screen and (min-width: 769px) {
-    width: 336px;
     margin-left: 24px;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 392px;
+  @media screen and (min-width: 1200px) {
     margin-top: 67px;
     margin-left: 76px;
   }
@@ -63,15 +29,33 @@
     text-align-last: left;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 10px;
   }
 }
 
 .about-us__text {
   width: 100%;
+  @media screen and (min-width: 769px) {
+    width: 336px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 392px;
+  }
 }
 
 .about-us__text + .about-us__text {
   margin-top: 20px;
+}
+
+.about-us__button {
+  display: block;
+  padding: 0;
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+  color: var(--button-second-color);
+  background-color: transparent;
+  border: none;
 }
