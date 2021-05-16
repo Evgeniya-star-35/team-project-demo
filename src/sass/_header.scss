@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 6px;
-  margin-bottom: 33px;
+  margin-bottom: 44px;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -35,6 +35,7 @@
   @media screen and (min-width: 1200px) {
     margin-right: 38px;
     padding-top: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -111,10 +112,12 @@
   color: #2e2520;
   margin-bottom: 36px;
   @media screen and (min-width: 768px) {
+    margin-bottom: 26px;
     text-align: start;
     margin-top: 4px;
   }
   @media screen and (min-width: 1200px) {
+    margin-top: 0;
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 30px;
@@ -124,8 +127,8 @@
 .top {
   background-image: url('../images/hero/mobile/donuts.png'),
     url('../images/hero/mobile/fon-top.png');
-  background-size: 130px, contain;
-  background-position: top left, top center;
+  background-size: 110px, contain;
+  background-position: top left, top ;
   background-repeat: no-repeat, no-repeat;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/hero/mobile/donuts@2x.png'),
@@ -135,8 +138,8 @@
   @media screen and (min-width: 320px) {
     background-image: url('../images/hero/mobile/donuts.png'),
       url('../images/hero/mobile/fon-top.png');
-    background-size: 160px, contain;
-    background-position: top left, top center;
+    background-size: 130px, contain;
+    background-position: top left -4px, top center;
     background-repeat: no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/mobile/donuts@2x.png'),
@@ -166,11 +169,11 @@
         url('../images/hero/tablet/fon-top@2x.png');
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1199px) {
     background-image: url('../images/hero/desktop/spoon.png'),
       url('../images/hero/desktop/donuts.png'), url('../images/hero/desktop/fon-top.png');
-    background-size: 180px, 378px, cover;
-    background-position: top 166px left, top right, bottom 68px center;
+    background-size: 180px, 690px, contain;
+    background-position: top 166px left, top right, center top;
     background-repeat: no-repeat, no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/desktop/spoon@2x.png'),
@@ -182,7 +185,7 @@
 .lowland {
   background-image: url('../images/contact/mobile/flour1-min.png'),
     url('../images/fon/mobile/bg-min.png');
-  background-size: 113px, contain;
+  background-size: 113px, 324px 1215px;
   background-position: bottom right, bottom 251px center;
   background-repeat: no-repeat, no-repeat;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -193,8 +196,8 @@
   @media screen and (min-width: 320px) {
     background-image: url('../images/contact/mobile/flour1-min.png'),
       url('../images/fon/mobile/bg-min.png');
-    background-size: 113px, cover;
-    background-position: bottom right, bottom 251px center;
+    background-size: 113px, contain;
+    background-position: bottom right, top center ;
     background-repeat: no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/contact/mobile/flour1@2x-min.png'),
@@ -202,14 +205,14 @@
     }
   }
   @media screen and (min-width: 480px) {
-    background-image: url('../images/contact/tablet/flour1-min.png'),
-      url('../images/fon/tablet/Vector13-min.png');
-    background-size: 125px, cover;
-    background-position: bottom right, bottom 240px center;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-image: url('../images/contact/mobile/flour1-min.png'),
+      url('../images/fon/mobile/bg-min.png');
+    background-size: 100px, contain;
+    background-position: bottom right, top center;
+    background-repeat: no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/contact/tablet/flour1@2x-min.png'),
-        url('../images/fon/tablet/Vector13@2x-min.png');
+      background-image: url('../images/contact/mobile/flour1@2x-min.png'),
+        url('../images/fon/mobile/bg@2x-min.png');
     }
   }
 
@@ -217,8 +220,8 @@
     background-image: url('../images/registration/tablet/donut2-min.png'),
       url('../images/registration/tablet/kisspng1-min.png'),
       url('../images/contact/tablet/flour1-min.png'), url('../images/fon/tablet/Vector13-min.png');
-    background-size: 220px, 250px, 125px, cover;
-    background-position: bottom 600px left, bottom 400px right, bottom right, bottom 138px center;
+    background-size: 220px, 270px, 150px, contain;
+    background-position: bottom 600px left, bottom 400px right, bottom right, top center;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/registration/tablet/donut2@2x-min.png'),
@@ -227,13 +230,14 @@
         url('../images/fon/tablet/Vector13@2x-min.png');
     }
   }
+ 
 
   @media screen and (min-width: 1200px) {
     background-image: url('../images/registration/desktop/donut2-min.png'),
       url('../images/registration/desktop/kisspng1-min.png'),
       url('../images/contact/desktop/flour1-min.png'), url('../images/fon/desktop/Vector13-min.png');
-    background-size: 220px, 550px, 125px, cover;
-    background-position: bottom 600px left 70px, bottom 220px right, bottom right, bottom center;
+    background-size: 250px, 550px, 300px, contain;
+    background-position: bottom 650px left 30px, bottom 325px right -14px, bottom right, center top;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/registration/desktop/donut2@2x-min.png'),
@@ -284,11 +288,4 @@
   }
 }
 
-.menu-buttom {
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}
+

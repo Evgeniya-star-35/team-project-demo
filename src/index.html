@@ -7,10 +7,30 @@
     <title>Donut</title>
 
     <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
-    <link type="image/png" sizes="16x16" rel="icon" href="./images/faviconpng.png" />
-    <link type="image/png" sizes="32x32" rel="icon" href="./images/faviconpng.png" />
-    <link type="image/png" sizes="96x96" rel="icon" href="./images/faviconpng.png" />
-    <link type="image/png" sizes="120x120" rel="icon" href="./images/faviconpng.png" />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./images/faviconpng.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./images/faviconpng.png"
+    />
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="./images/faviconpng.png"
+    />
+    <link
+      type="image/png"
+      sizes="120x120"
+      rel="icon"
+      href="./images/faviconpng.png"
+    />
     <meta
       name="description"
       content="We have the most delicious donuts! Buy donuts only from us!"
@@ -54,12 +74,19 @@
       <include src="./partials/footer.html"></include>
     </div>
 
+    <div id="toTop">
+      <svg>
+        <use href="./images/sprite.svg#icon-up-button" width=40px></use>
+      </svg>
+    </div>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+
     <script src="./js/about-us-more-less.js"></script>
     <script src="./js/moreLess.js"></script>
 
     <script src="./index.js"></script>
     <script src="./js/menu.js"></script>
+
 
     <!-- Слайдер -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -68,5 +95,19 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/reviews.js"></script>
+
+    <script src="./js/moreLess.js"></script>
+    <script src="./js/menu.js"></script>
+
+    <script src="./index.js"></script>
+
+
+
+    <!-- Скролл по сайту -->
+    <script src="./js/id-smooth-scrolling.js"></script>
+    <!-- Кнопка вверх -->
+    <script src="./js/up-button.js"></script>
+
+
   </body>
 </html>
