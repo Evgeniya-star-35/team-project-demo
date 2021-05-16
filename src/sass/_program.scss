@@ -74,12 +74,16 @@
 
   @media screen and(min-width: 1200px) {
     font-size: 18px;
-    line-height: 1.22;
+    line-height: 1.32;
   }
 }
 
 .program-description__item:not(:last-child) {
   padding-bottom: 10px;
+  @media screen and(min-width: 1200px) {
+  padding-bottom: 15px;
+   
+  }
 }
 
 .program-description {
