@@ -14,7 +14,7 @@
     max-width: 310px;
 
 	@media screen and (min-width:1200px) {
-		max-width: 392px;
+		max-width: 407px;
 	}
   }
 }
@@ -136,12 +136,13 @@
 
 .program__window-case {
   padding-top: 30px;
+
 }
 
 .program-showcase {
   display: flex;
   flex-wrap: wrap;
-  //   margin-left: -15px;
+ 
   margin-top: -15px;
 
   @media screen and (max-width: 767.9px) {
@@ -168,14 +169,26 @@
 
 .program-showcase__item:nth-child(2) {
   margin-top: 50px;
+  @media screen and (min-width:1200px) {
+	margin-top: 70px;
+
+  }
 }
 
 .program-showcase__item:nth-child(3) {
   margin-top: 30px;
+  @media screen and (min-width:1200px) {
+	margin-top: 5px;
+
+  }
 }
 
 .program-showcase__item:nth-child(4) {
   margin-top: 60px;
+  @media screen and (min-width:1200px) {
+	margin-top: 60px;
+
+  }
 }
 
 .program-showcase__card {
@@ -188,12 +201,26 @@
 
   padding-top: 50px;
   position: relative;
+
+  @media screen and (min-width: 1200px) {
+	width: 180px;
+	height: 180px;
+	padding-top: 70px;
+
+  }
 }
+
+
 
 .program-showcase__thumb {
   position: absolute;
   top: -35px;
   left: 35px;
+
+  @media screen and (min-width: 1200px){
+	top: -40px;
+	left: 45px;
+  }
 }
 
 .program-showcase__donut-img {
@@ -211,6 +238,11 @@
   margin-bottom: 12px;
   text-align: center;
   color: var(--title-donut-color);
+
+  @media screen and (min-width: 1200px){
+	font-size: 24px;
+	line-height: 1.25;
+  }
 }
 
 .program-showcase__donut-text {
@@ -223,6 +255,11 @@
   padding-bottom: 13px;
   display: block;
   color: var(--title-donut-color);
+
+  @media screen and (min-width: 1200px){
+	font-size: 16px;
+	line-height: 1.25;
+  }
 }
 
 .program-showcase__donat-mark {
@@ -236,4 +273,9 @@
 .program-showcase__donut-icon {
   width: 100%;
   height: 20px;
+
+  @media screen and (min-width: 1200px){
+	height: 25px;
+
+  }
 }
