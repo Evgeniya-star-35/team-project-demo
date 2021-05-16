@@ -74,6 +74,8 @@
     }
 }
 .pagination {
+    width: 100%;
+    position: relative;
     @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: 1.25;
@@ -89,9 +91,41 @@
     line-height: 1.25;
     color: #ab816c;
 
-    &__border::before,
+    &__border::before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        top: 7px;
+        left: 74px;
+
+        @media screen and (min-width: 768px) {
+            top: 8px;
+            left: 242px;
+        }
+        @media screen and (min-width: 1200px) {
+            top: 8px;
+            left: 41%;
+        }
+        border: 1px solid #ab816c;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
     &__border::after {
-        content: "-----";
+        content: "";
+        position: absolute;
+        width: 35px;
+        top: 7px;
+        left: 159px;
+
+        @media screen and (min-width: 768px) {
+            top: 8px;
+            left: 339px;
+        }
+        @media screen and (min-width: 1200px) {
+            top: 8px;
+            left: 432px;
+        }
+        border: 1px solid #ab816c;
         margin-right: 10px;
         margin-left: 10px;
     }
