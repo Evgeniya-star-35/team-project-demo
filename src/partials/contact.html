@@ -1,15 +1,15 @@
 <section class="contact container" id="contacts">
       
         <h2 class="section-title">Contact</h2>
-        <form class="contact-form">
+        <form class="contact-form" method="post" id="ajax_form" action="">
 
           <p class="contact-form__title">We will answer any question!</p>
 
-          <input class="contact-form__input" type="text" name="E-mail" placeholder="Email" pattern="^[a-zA-Z0-9]+$">
+          <input class="contact-form__input" type="text" name="email" placeholder="Email" pattern="^[a-zA-Z0-9]\@+$">
           <textarea class="contact-form__textarea" name="comment" rows="1" placeholder="Type your question"></textarea>
 
-          <button class="btn btn--contact" type="submit">Send</button>
+          <button class="btn btn--contact" type="submit"  id="btn" value="submit">Send</button>
         </form>
-
+    <div class="result_form" id="result_form"></div>
 </section>
   
