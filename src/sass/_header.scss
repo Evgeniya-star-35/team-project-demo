@@ -123,6 +123,16 @@
     margin-bottom: 30px;
   }
 }
+.animate__slideInDown {
+  @media screen and (min-width: 1200px) {
+    animation-name: backInDown;
+    animation-duration: 2500ms;
+    animation-timing-function: var(--animation);
+    animation-delay: 200ms;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+  }
+}
 
 .top {
   background-image: url('../images/hero/mobile/donuts.png'),
