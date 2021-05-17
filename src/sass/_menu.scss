@@ -20,12 +20,15 @@
 
 .menu-modal {
   @media screen and (max-width: 1199px) {
+    z-index: 1;
+
+
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 100%;
-    min-height: 796px;
-    padding: 48px 40px;
+    width: 100vw;
+    height: 100vh;
+    padding: 25px 65px;
     transform: translate(-50%, -50%) scale(1);
     background-color: rgba(254, 243, 228, 0.9);
     transition: transform 250ms var(--animation) opasity 250ms var(--animation);
@@ -44,10 +47,6 @@
   align-items: center;
   position: absolute;
   cursor: pointer;
-  right: 15px;
-  top: 10px;
-  width: 40px;
-  height: 40px;
   margin: 0;
   padding: 0;
   border: none;
@@ -57,6 +56,18 @@
   &:focus,
   &:hover {
     fill: var(--accent-color);
+  }
+}
+@media screen and (max-width: 480px){
+  .menu-modal__close{
+    right: 21px;
+    top: 20px;
+  }
+}
+@media screen and (min-width: 480px){
+  .menu-modal__close{
+    right: 67px;
+    top: 25px;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -103,9 +114,13 @@
   display: inline-block;
   text-align: center;
 }
+.page-menu:hover{
+  color: #876655;
+}
 
 .logo-menu {
   margin-bottom: 40px;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -123,4 +138,9 @@
   position: absolute;
   cursor: pointer;
   right: 5%;
+}
+@media screen and (max-width: 1199px){
+.menu {
+    text-align: center;
+}
 }
