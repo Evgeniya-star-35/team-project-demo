@@ -1,30 +1,66 @@
 .backdrop {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background-color: #fef3e4;
-  background: rgba(254, 243, 228, 0.9);
-  position: fixed;
-  position: relative;
-}
-
-.backdrop.is-hidden {
-  opacity: 1;
-  pointer-events: none;
-}
-
-@media screen and (min-width: 769px) {
-  .backdrop {
-    display: none;
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opasity 250ms var(--animation);
   }
 }
 
-.close {
-  width: 100%;
-  height: 100%;
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.menu-modal {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    min-height: 796px;
+    padding: 48px 40px;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: rgba(254, 243, 228, 0.9);
+
+    transition: transform 250ms var(--animation) opasity 250ms var(--animation);
+  }
+}
+.backdrop.is-hidden .menu-modal {
+  transform: translate(-50%, -50%) scale(1.2);
+  opacity: 0;
+}
+.menu-modal__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: fill 250ms var(--animation);
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+@media screen and (min-width: 767px) {
+  .menu-modal__close {
+    display: none;
+  }
 }
 
 .menu-contact {
@@ -41,17 +77,6 @@
     height: 100vh;
     width: 100vw;
   }
-}
-
-.menu-buttom {
-  z-index: 10;
-  position: absolute;
-  transform: translate(-5%, -50%);
-  fill: var(--main-text-color);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  background-color: transparent;
-  margin: 5px;
-  border: transparent;
 }
 
 .menu-button {
@@ -74,10 +99,6 @@
   text-decoration: none;
   display: inline-block;
   text-align: center;
-}
-
-.menu-buttom.is-open .icon-close {
-  display: block;
 }
 
 .logo-menu {
