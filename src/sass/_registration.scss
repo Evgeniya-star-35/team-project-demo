@@ -8,6 +8,32 @@
     padding-bottom: 80px;
   }
 }
+.container--my {
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/registration/tablet/donut2-min.png'),
+      url('../images/registration/tablet/kisspng1-min.png');
+
+    background-size: 220px, 270px;
+    background-position: bottom 600px left, bottom 400px right;
+    background-repeat: no-repeat, no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/registration/tablet/donut2@2x-min.png'),
+        url('../images/registration/tablet/kisspng1@2x-min.png');
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/registration/desktop/donut2-min.png'),
+      url('../images/registration/desktop/kisspng1-min.png');
+
+    background-size: 250px, 550px;
+    background-position: bottom 650px left 30px, bottom 325px right -14px;
+    background-repeat: no-repeat, no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/registration/desktop/donut2@2x-min.png'),
+        url('../images/registration/desktop/kisspng1@2x-min.png');
+    }
+  }
+}
 .registration__frame {
   margin: 0;
   width: 100%;
