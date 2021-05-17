@@ -128,7 +128,7 @@
   background-image: url('../images/hero/mobile/donuts.png'),
     url('../images/hero/mobile/fon-top.png');
   background-size: 110px, contain;
-  background-position: top left, top ;
+  background-position: top left, top;
   background-repeat: no-repeat, no-repeat;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/hero/mobile/donuts@2x.png'),
@@ -197,7 +197,7 @@
     background-image: url('../images/contact/mobile/flour1-min.png'),
       url('../images/fon/mobile/bg-min.png');
     background-size: 113px, contain;
-    background-position: bottom right, top center ;
+    background-position: bottom right, top center;
     background-repeat: no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/contact/mobile/flour1@2x-min.png'),
@@ -230,7 +230,6 @@
         url('../images/fon/tablet/Vector13@2x-min.png');
     }
   }
- 
 
   @media screen and (min-width: 1200px) {
     background-image: url('../images/registration/desktop/donut2-min.png'),
@@ -287,5 +286,3 @@
     display: none;
   }
 }
-
-
