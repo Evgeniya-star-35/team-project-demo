@@ -59,28 +59,19 @@
   border: none;
   cursor: pointer;
 
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
   @media screen and (min-width: 480px) {
     font-size: 23px;
   }
   @media screen and (min-width: 1199.99px) {
     display: none;
   }
-}
-
-.about-us__button .about-us__less {
-  display: none;
-}
-
-.about-us__button.is-open .about-us__less {
-  display: block;
-}
-
-.about-us__button.is-open .about-us__read-more {
-  display: none;
-}
-
-.about-us__text--below.is-open {
-  display: block;
 }
 
 .about-us__text--below {
