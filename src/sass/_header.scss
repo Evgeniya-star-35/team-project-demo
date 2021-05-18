@@ -251,6 +251,18 @@
         url('../images/hero/desktop/donuts@2x.png'), url('../images/hero/desktop/fon-top@2x.png');
     }
   }
+
+  @media screen and (min-width: 1580px) {
+    background-image: url('../images/hero/desktop/spoon.png'),
+      url('../images/hero/desktop/donuts.png'), url('../images/hero/desktop/fon-top.png');
+    background-size: 180px, 690px, cover;
+    background-position: top 166px left, top right, center top -500px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/desktop/spoon@2x.png'),
+        url('../images/hero/desktop/donuts@2x.png'), url('../images/hero/desktop/fon-top@2x.png');
+    }
+  }
 }
 
 .lowland {
@@ -280,7 +292,7 @@
   @media screen and (min-width: 480px) {
     background-image: url('../images/contact/mobile/flour1-min.png'),
       url('../images/fon/mobile/bg-min.png');
-    background-size: 100px, 480px;
+    background-size: 100px, cover;
     background-position: bottom right, top center;
     background-repeat: no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -292,7 +304,7 @@
   @media screen and (min-width: 600px) {
     background-image: url('../images/contact/mobile/flour1-min.png'),
       url('../images/fon/mobile/bg-min.png');
-    background-size: 100px, 600px;
+    background-size: 100px, cover;
     background-position: bottom right, top center;
     background-repeat: no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -302,13 +314,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image:
+    background-image: url('../images/registration/tablet/donutreg.png'), url('../images/registration/tablet/kisspngreg.png'), 
       url('../images/contact/tablet/flour1-min.png'), url('../images/fon/tablet/Vector13-min.png');
-    background-size: 150px, 768px;
-    background-position: bottom right, top center;
-    background-repeat: no-repeat, no-repeat;
+    background-size: 250px, 300px , 150px, contain;
+    background-position: bottom 580px left, bottom 380px right, bottom right, top center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image:
+      background-image: url('../images/registration/tablet/kisspngreg@2x-min.png'), url('../images/registration/tablet/donutreg@2x.png')
         url('../images/contact/tablet/flour1@2x-min.png'),
         url('../images/fon/tablet/Vector13@2x-min.png');
     }
@@ -317,55 +329,54 @@
   
 
   @media screen and (min-width: 876px) {
-    background-image:
-      url('../images/contact/tablet/flour1-min.png'), url('../images/fon/tablet/Vector13-min.png');
-    background-size: 150px, contain;
-    background-position: bottom right, top center;
-    background-repeat: no-repeat, no-repeat;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image:
-        url('../images/contact/tablet/flour1@2x-min.png'),
-        url('../images/fon/tablet/Vector13@2x-min.png');
-    }
+    background-image: url('../images/registration/tablet/donutreg.png'), url('../images/registration/tablet/kisspngreg.png'), 
+    url('../images/contact/tablet/flour1-min.png'), url('../images/fon/tablet/Vector13-min.png');
+  background-size: 250px, 300px , 150px, cover;
+  background-position: bottom 580px left, bottom 380px right, bottom right, top center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/registration/tablet/kisspngreg@2x-min.png'), url('../images/registration/tablet/donutreg@2x.png')
+      url('../images/contact/tablet/flour1@2x-min.png'),
+      url('../images/fon/tablet/Vector13@2x-min.png');
   }
-  @media screen and (min-width: 1100) {
-    background-image:
-      url('../images/contact/tablet/flour1-min.png'), url('../images/fon/tablet/Vector13-min.png');
-    background-size: 150px, contain;
-    background-position: bottom right, top center;
-    background-repeat: no-repeat, no-repeat;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image:
-        url('../images/contact/tablet/flour1@2x-min.png'),
-        url('../images/fon/tablet/Vector13@2x-min.png');
-    }
   }
+
 
   
   @media screen and (min-width: 1200px) {
-    background-image:
+    background-image: url('../images/registration/desktop/donut2-min.png'), url('../images/registration/desktop/kisspng1-min.png')
       url('../images/contact/desktop/flour1-min.png'), url('../images/fon/desktop/Vector13-min.png');
-    background-size: 300px, cover;
-    background-position: bottom right, center top;
-    background-repeat:  no-repeat, no-repeat;
+    background-size: 300px, 500px, 300px, cover;
+    background-position: bottom 580px left 60px, bottom 352px right, bottom right, center top;
+    background-repeat: no-repeat, no-repeat,  no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: 
-        url('../images/contact/desktop/flour1@2x-min.png'),
+      background-image:url('../images/registration/desktop/donut2-min.png'), url('../images/registration/desktop/kisspng1@2x-min.png'), url('../images/contact/desktop/flour1@2x-min.png'),
         url('../images/fon/desktop/Vector13@2x-min.png');
     }
   }
 
   @media screen and (min-width: 1280px) {
-    background-image:
-      url('../images/contact/desktop/flour1-min.png'), url('../images/fon/desktop/Vector13-min.png');
-    background-size: 300px, cover;
-    background-position: bottom right, center top;
-    background-repeat:  no-repeat, no-repeat;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: 
-        url('../images/contact/desktop/flour1@2x-min.png'),
-        url('../images/fon/desktop/Vector13@2x-min.png');
-    }
+    background-image: url('../images/registration/desktop/donut2-min.png'), url('../images/registration/desktop/kisspng1-min.png')
+    url('../images/contact/desktop/flour1-min.png'), url('../images/fon/desktop/Vector13-min.png');
+  background-size:300px, 500px, 300px, cover;
+  background-position: bottom 580px left 150px, bottom 352px right, bottom right, center top;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image:url('../images/registration/desktop/donut2-min.png'), url('../images/registration/desktop/kisspng1@2x-min.png'), url('../images/contact/desktop/flour1@2x-min.png'),
+      url('../images/fon/desktop/Vector13@2x-min.png');
+   }
+  }
+
+  @media screen and (min-width: 1980px) {
+    background-image: url('../images/registration/desktop/donut2-min.png'), url('../images/registration/desktop/kisspng1-min.png')
+    url('../images/contact/desktop/flour1-min.png'), url('../images/fon/desktop/Vector13-min.png');
+  background-size: 350px, 450px, 300px, cover;
+  background-position: bottom 580px left 320px, bottom 250px right 350px, bottom right, center top;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image:url('../images/registration/desktop/donut2-min.png'), url('../images/registration/desktop/kisspng1@2x-min.png'), url('../images/contact/desktop/flour1@2x-min.png'),
+      url('../images/fon/desktop/Vector13@2x-min.png');
+   }
   }
 }
 
