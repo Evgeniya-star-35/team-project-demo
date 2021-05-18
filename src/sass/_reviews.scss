@@ -27,21 +27,21 @@
 .slick-active {
     opacity: 1;
 }
-.slick-center {
-    @media screen and (min-width: 768px) {
-        padding-top: 33px;
-        padding-bottom: 30px;
-    }
-}
+
 .slider {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     @media screen and (min-width: 768px) {
-        height: 250px;
+
     }
     @media screen and (min-width: 1200px) {
-        height: 280px;
+
+        height: 225px;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 245px;
+
         width: 800px;
     }
 
