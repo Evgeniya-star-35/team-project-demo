@@ -1,8 +1,8 @@
 .about-us__container {
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-    width: 769px;
-    padding-right: 49px;
+    width: 768px;
+    padding-right: 63px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -12,7 +12,7 @@
 }
 
 .about-us__description {
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     margin-left: 24px;
   }
 
@@ -24,7 +24,7 @@
 
 .about-us__title {
   margin-bottom: 0;
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     text-align-last: left;
   }
 
@@ -35,7 +35,7 @@
 
 .about-us__text {
   width: 100%;
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     width: 336px;
   }
   @media screen and (min-width: 1200px) {
@@ -59,28 +59,19 @@
   border: none;
   cursor: pointer;
 
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
   @media screen and (min-width: 480px) {
     font-size: 23px;
   }
   @media screen and (min-width: 1199.99px) {
     display: none;
   }
-}
-
-.about-us__button .about-us__less {
-  display: none;
-}
-
-.about-us__button.is-open .about-us__less {
-  display: block;
-}
-
-.about-us__button.is-open .about-us__read-more {
-  display: none;
-}
-
-.about-us__text--below.is-open {
-  display: block;
 }
 
 .about-us__text--below {
