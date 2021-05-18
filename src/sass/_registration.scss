@@ -1,5 +1,4 @@
 .registration {
-  position: relative;
   padding-bottom: 30px;
   @media screen and (min-width: 768px) {
     padding-bottom: 50px;
@@ -8,17 +7,18 @@
     padding-bottom: 80px;
   }
 }
-.container--my {
-  @media screen and (min-width: 768px) {
-    background-image: url('../images/registration/tablet/donut2-min.png'),
-      url('../images/registration/tablet/kisspng1-min.png');
 
-    background-size: 220px, 270px;
+.container-_my {
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/registration/tablet/donutreg.png'),
+      url('../images/registration/tablet/kisspngreg@2x.png');
+
+    background-size: 200px 200px, 190px 345px;
     background-position: bottom 600px left, bottom 400px right;
     background-repeat: no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/registration/tablet/donut2@2x-min.png'),
-        url('../images/registration/tablet/kisspng1@2x-min.png');
+      background-image: url('../images/registration/tablet/donutreg@2x.png'),
+        url('../images/registration/tablet/kisspngreg@2x-min.png');
     }
   }
   @media screen and (min-width: 1200px) {
