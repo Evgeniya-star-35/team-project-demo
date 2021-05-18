@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("a.header-list__link").click(function () {
+    $("a.header-list__link,a.btn--register,a.page-menu").click(function () {
         $("html, body").animate({
             scrollTop: $($(this).attr("href")).offset().top + "px"
         }, {
