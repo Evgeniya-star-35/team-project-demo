@@ -109,14 +109,10 @@
     .gold {
       background-image: url('../images/registration/desktop/kisspng1@2x-min.png');
     }
-    @media screen and (min-width: 1280px) {
-      left: 60px;
-    }
-    @media screen and (min-width: 1500px) {
-      left: 170px;
-    }
+
     @media screen and (min-width: 1700px) {
-      left: 310px;
+      right: 301px;
+      bottom: -186px;
     }
   }
 }
