@@ -155,6 +155,8 @@
 }
 
 .top {
+  max-width: 1920px;
+  margin: 0 auto;
   background-image: url('../images/hero/mobile/donuts.png'),
     url('../images/hero/mobile/fon-top.png');
   background-size: 110px, contain;
@@ -252,6 +254,8 @@
 }
 
 .lowland {
+  max-width: 1920px;
+  margin: 0 auto;
   background-image: url('../images/contact/mobile/flour1-min.png'),
     url('../images/fon/mobile/bg-min.png');
   background-size: 113px, contain;
