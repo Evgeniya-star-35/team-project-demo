@@ -105,7 +105,7 @@
 
 // ====moreLess
 .program__button {
-  display: inline-flex;
+  display: inline-block;
   padding: 0;
   margin: 0;
   border: none;
@@ -118,6 +118,13 @@
   cursor: pointer;
   color: var(--button-second-color);
 
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
   @media screen and (min-width: 480px) {
     font-size: 23px;
   }
@@ -127,21 +134,29 @@
   }
 }
 
-.program__button .program__less {
-  display: none;
-}
+// .program__button .program__less {
+//   display: none;
+// }
 
-.program__button.is-open .program__less {
-  display: block;
-}
+// .program__button.is-open .program__less {
+//   display: block;
+// }
 
-.program__button.is-open .program__read-more {
-  display: none;
-}
+// .program__button.is-open .program__read-more {
+//   display: none;
+// }
 
-.program__text--below.is-open {
-  display: block;
-}
+// .program__text--below.is-open {
+//   display: block;
+// }
+
+// .program__text--below {
+//   display: none;
+
+//   @media screen and (min-width: 1200px) {
+//     display: block;
+//   }
+// }
 
 .program__text--below {
   display: none;
