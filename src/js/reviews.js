@@ -6,7 +6,7 @@ $(document).ready(function() {
         asNavFor: '.slider-pev',
         speed: 1000,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 4000,
         centerMode: true,
         initialSlide: 1,
         
