@@ -1,0 +1,116 @@
+.fond {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(254, 243, 228, 0.9);
+
+  opacity: 1;
+  transition: opacity var(--animation);
+}
+
+.fond.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.fond.is-hidden .map {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 70px 40px;
+  background-color: transparent;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--animation);
+
+  @media screen and (min-width: 380px) {
+    padding: 40px;
+  }
+
+  @media screen and (min-width: 479.98px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1199.98px) {
+    min-width: 530px;
+  }
+}
+
+.map-btn {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(254, 243, 228, 0.9);
+  width: 30px;
+  height: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: var(--accent-color);
+
+  @media screen and (min-width: 380px) {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.map-btn__close {
+  position: absolute;
+  //   fill: var(--button-second-color);
+
+  transition: fill var(--animation);
+
+  .map-btn:hover &,
+  .map-btn:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+// @media screen and (max-width: 768.98px) {
+//   .map-medium,
+//   .map-large {
+//     display: none;
+//   }
+// }
+
+// @media screen and (min-width: 768.98px) and (max-width: 1199.98px) {
+//   .map-large,
+//   .map-small {
+//     display: none;
+//   }
+//   .map-medium {
+//     display: block;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .map-medium,
+//   .map-small {
+//     display: none;
+//   }
+//   .map-large {
+//     display: block;
+//   }
+// }
