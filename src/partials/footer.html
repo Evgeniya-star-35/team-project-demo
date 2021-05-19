@@ -34,13 +34,13 @@
       </ul>
       <ul class="address">
         <li class="address__item">
-          <a href="tel:+19102228855" class="address__link">
+          <a tel="tel:+19102228855" class="address__link">
             <svg class="address__icon" width="15" height="15">
               <use href="./images/sprite.svg#icon-phone"></use>
             </svg>(910)222-8855</a>
         </li>
         <li class="address__item ">
-          <button type="button" class="address__link address__link--btn" data-map-open>
+          <button type="button" class="address__link address__link--btn" aria-label="New York" data-map-open>
             <svg class="address__icon" width="15" height="15">
               <use href="./images/sprite.svg#icon-location"></use>
             </svg>New York</button>
@@ -49,7 +49,7 @@
       
         <div class="fond is-hidden" data-fond>
           <div class="map">
-            <button class="map-btn" data-map-close>
+            <button class="map-btn" aria-label="close" data-map-close>
               <svg class="map-btn__close" width="15" height="15">
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
