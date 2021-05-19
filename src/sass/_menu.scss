@@ -66,14 +66,20 @@
 }
 @media screen and (max-width: 480px) {
   .menu-modal__close {
-    right: 21px;
-    top: 20px;
+    right: 26px;
+    top: 14px;
   }
 }
 @media screen and (min-width: 480px) {
   .menu-modal__close {
-    right: 67px;
-    top: 25px;
+    right: 27px;
+    top: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-modal__close {
+    right: 80px;
+    top: 26px;
   }
 }
 @media screen and (min-width: 1199px) {
