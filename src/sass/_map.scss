@@ -48,8 +48,8 @@
 
 .map-btn {
   position: absolute;
-  top: 60px;
-  right: 20px;
+  top: 41px;
+  right: 15px;
 
   display: flex;
   justify-content: center;
@@ -74,7 +74,6 @@
 
 .map-btn__close {
   position: absolute;
-  //   fill: var(--button-second-color);
 
   transition: fill var(--animation);
 
@@ -88,29 +87,3 @@ iframe {
   width: 100%;
   height: 100%;
 }
-// @media screen and (max-width: 768.98px) {
-//   .map-medium,
-//   .map-large {
-//     display: none;
-//   }
-// }
-
-// @media screen and (min-width: 768.98px) and (max-width: 1199.98px) {
-//   .map-large,
-//   .map-small {
-//     display: none;
-//   }
-//   .map-medium {
-//     display: block;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .map-medium,
-//   .map-small {
-//     display: none;
-//   }
-//   .map-large {
-//     display: block;
-//   }
-// }
