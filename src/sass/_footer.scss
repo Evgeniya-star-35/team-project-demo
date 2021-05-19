@@ -19,6 +19,8 @@
 }
 
 .address__link {
+  display: inline-block;
+  cursor: pointer;
   color: inherit;
   transition: color var(--animation);
 
