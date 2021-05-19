@@ -57,10 +57,18 @@
 }
 
 .social--list {
+  margin-top: 45px;
   justify-content: center;
+
  
   @media screen and (min-width: 768px) {
+    margin-top: 32px;
     justify-content: start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 65px;
+    
   }
 
   
