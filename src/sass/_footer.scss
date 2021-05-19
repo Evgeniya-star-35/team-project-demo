@@ -20,6 +20,8 @@
 
 .address__link {
   display: inline-block;
+  font-size: 16px;
+  line-height: 1.25;
   cursor: pointer;
   color: inherit;
   transition: color var(--animation);
@@ -35,11 +37,16 @@
   fill: var(--accent-color);
 }
 .address__icon {
-  margin-right: 5px;
+  margin-right: 3px;
   transition: fill var(--animation);
 
   .address__link:hover &,
   .address__link:focus & {
     fill: var(--accent-color);
   }
+}
+.address__link--btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
