@@ -9,6 +9,7 @@ $(document).ready(function() {
         autoplaySpeed: 4000,
         centerMode: true,
         initialSlide: 1,
+        pauseOnFocus: true,
         
         responsive: [
             {
