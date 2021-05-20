@@ -58,7 +58,6 @@
 }
 .registration-text__one,
 .registration-text__two {
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -126,10 +125,6 @@
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 17px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   text-align: center;
   color: var(--main-text-color);
   @media screen and (min-width: 768px) {
@@ -140,8 +135,6 @@
   @media screen and (min-width: 1200px) {
     max-width: 260px;
     margin-bottom: 13px;
-    font-size: 18px;
-    line-height: 1.22;
   }
 }
 .section-title--mobile {
@@ -164,10 +157,6 @@
 }
 
 .registration-form__input {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   width: 100%;
   margin-top: 0;
   padding-bottom: 2px;
@@ -177,9 +166,6 @@
   border-top: none;
   border-bottom: 1px solid #ab816c;
   cursor: pointer;
-  @media screen and (min-width: 480px) {
-    min--width: 265px;
-  }
 }
 .registration-form__input:not(:last-child) {
   margin-bottom: 25px;
@@ -205,10 +191,6 @@
 }
 
 .registration-form__input::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(171, 129, 108, 0.5);
 }
 
