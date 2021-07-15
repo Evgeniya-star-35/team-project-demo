@@ -385,8 +385,8 @@ body.menu-modal-open {
             animation-delay: 200ms;
     -webkit-animation-direction: alternate;
             animation-direction: alternate;
-    -webkit-animation-iteration-count: 2;
-            animation-iteration-count: 2;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
   }
 }
 
@@ -716,17 +716,15 @@ body.menu-modal-open {
 @media screen and (max-width: 1199px) {
   .backdrop {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    opacity: 1;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.2);
-    -webkit-transition: opasity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opasity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -736,22 +734,25 @@ body.menu-modal-open {
   visibility: hidden;
 }
 
-@media screen and (max-width: 1199px) {
+.menu-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  padding: 105px 65px;
+  background-color: rgba(254, 243, 228, 0.9);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 380px) {
   .menu-modal {
-    z-index: 1;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    padding: 25px 65px;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
-    background-color: rgba(254, 243, 228, 0.9);
-    -webkit-transition: opasity 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opasity 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opasity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opasity 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 35px 65px;
   }
 }
 
@@ -761,19 +762,15 @@ body.menu-modal-open {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .menu-modal {
-    z-index: 10;
-  }
-}
-
 .backdrop.is-hidden .menu-modal {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
-  opacity: 0;
 }
 
 .menu-modal__close {
+  position: absolute;
+  right: 26px;
+  top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,7 +780,6 @@ body.menu-modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -797,17 +793,9 @@ body.menu-modal-open {
   fill: var(--accent-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 380px) {
   .menu-modal__close {
-    right: 26px;
     top: 14px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .menu-modal__close {
-    right: 27px;
-    top: 15px;
   }
 }
 
@@ -818,86 +806,34 @@ body.menu-modal-open {
   }
 }
 
-@media screen and (min-width: 1199px) {
-  .menu-modal__close {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .menu-contact {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 25px;
-    height: 100vh;
-    width: 100vw;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .menu-contact {
-    height: 100vh;
-    width: 100vw;
-  }
-}
-
-.menu-button {
-  position: absolute;
-  width: 30px;
-  top: 20px;
-  right: 21px;
-  height: 30px;
-  border-radius: 50%;
-  background: #fef3e4;
-  border: 1px solid rgba(254, 243, 228, 0.9);
-}
-
-.page-menu {
-  color: var(--main-text-color);
-  position: relative;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.22;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-}
-
-.page-menu:hover {
-  color: #876655;
-}
-
 .logo-menu {
   margin-bottom: 40px;
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .menu-donat {
-    padding-bottom: 45px;
+.menu {
+  text-align: center;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__item:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 
-@media screen and (min-width: 769px) {
-  .menu-donat {
-    padding-bottom: 40px;
-  }
+.menu__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.21;
+  color: var(--main-text-color);
 }
 
-.mobile-icon {
-  position: absolute;
-  cursor: pointer;
-  right: 5%;
-}
-
-@media screen and (max-width: 1199px) {
-  .menu {
-    text-align: center;
-  }
+.menu__link:hover {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1637,7 +1573,6 @@ body.menu-modal-open {
 
 .registration-text__one,
 .registration-text__two {
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -1743,10 +1678,6 @@ body.menu-modal-open {
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 17px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   text-align: center;
   color: var(--main-text-color);
 }
@@ -1763,8 +1694,6 @@ body.menu-modal-open {
   .registration-form__join {
     max-width: 260px;
     margin-bottom: 13px;
-    font-size: 18px;
-    line-height: 1.22;
   }
 }
 
@@ -1795,10 +1724,6 @@ body.menu-modal-open {
 }
 
 .registration-form__input {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   width: 100%;
   margin-top: 0;
   padding-bottom: 2px;
@@ -1808,12 +1733,6 @@ body.menu-modal-open {
   border-top: none;
   border-bottom: 1px solid #ab816c;
   cursor: pointer;
-}
-
-@media screen and (min-width: 480px) {
-  .registration-form__input {
-    min--width: 265px;
-  }
 }
 
 .registration-form__input:not(:last-child) {
@@ -1846,34 +1765,18 @@ body.menu-modal-open {
 }
 
 .registration-form__input::-webkit-input-placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(171, 129, 108, 0.5);
 }
 
 .registration-form__input:-ms-input-placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(171, 129, 108, 0.5);
 }
 
 .registration-form__input::-ms-input-placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(171, 129, 108, 0.5);
 }
 
 .registration-form__input::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(171, 129, 108, 0.5);
 }
 
@@ -2210,6 +2113,13 @@ body.menu-modal-open {
   fill: #ab816c;
 }
 
+@media screen and (max-width: 1199px) {
+  #toTop {
+    bottom: 18px;
+    right: -74px;
+  }
+}
+
 .fond {
   position: fixed;
   top: 0;
@@ -2240,7 +2150,7 @@ body.menu-modal-open {
   left: 50%;
   width: 100%;
   height: 100%;
-  padding: 70px 40px;
+  padding: 100px 40px;
   background-color: transparent;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -2252,7 +2162,7 @@ body.menu-modal-open {
 
 @media screen and (min-width: 380px) {
   .map {
-    padding: 40px;
+    padding: 70px 30px;
   }
 }
 
@@ -2281,23 +2191,20 @@ body.menu-modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(254, 243, 228, 0.9);
+  background-color: transparent;
   width: 30px;
   height: 30px;
   border: none;
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50%;
   cursor: pointer;
   outline: var(--accent-color);
 }
 
 @media screen and (min-width: 380px) {
   .map-btn {
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 0;
   }
 }
 
